@@ -5,7 +5,7 @@
 #include <fstream>
 #include "MyStringLib.h"
 #include <iomanip>
-
+#include <limits>
 
 using namespace std;
 using namespace MyStringLib;
@@ -56,8 +56,7 @@ namespace MyBankDataLib
 		cout << "Enter Client.AccountBalance: ";
 		cin >> Client.AccountBalance;
 
-		cin.ignore(numeric_limits<streamsize>::max(), '\n');
-		return Client;
+std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');		return Client;
 	}
 
 	string ConvertRecordToLine(const stClientData& Client, string Separator = "#//#")
@@ -283,7 +282,7 @@ namespace MyBankDataLib
 		cout << "Update Account Balance : ";
 		cin >> Client.AccountBalance;
 
-		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
 		return Client;
 	}
