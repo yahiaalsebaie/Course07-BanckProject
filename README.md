@@ -23,6 +23,14 @@ The application is structured into a modular design split between a state-driven
   * `MyBankDataLib.h`: Custom record parsing, standard layout alignment, and direct disk file synchronization.
   * `MyInputLib.h`: Custom numeric range validation (`ReadNumberInRange`) guarding input interfaces against invalid data entry or software crashes.
   * `MyStringLib.h`: Optimized string operations utilizing safe right/left parsing boundaries.
+ 
+---
+
+## 🔒 Database & Data Privacy Notice
+
+* **`Clients.txt` Usage**: The included `Clients.txt` file serves exclusively as a **mock database containing simulated client records, arbitrary account numbers, and testing balances**. 
+* No real-world financial credentials, personal identifiable information (PII), or actual banking data are stored within this repository. 
+* This localized flat-file registry is structured solely to verify file I/O operations, record-parsing logic, and transactions engine stress-testing during the initial developmental phases.
 ---
 
 ## 🚀 Getting Started & Compilation
