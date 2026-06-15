@@ -91,7 +91,7 @@ namespace MyBankDataLib
 		cout << "Enter Client.AccountBalance: ";
 		cin >> Client.AccountBalance;
 
-		cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		cin.ignore((std::numeric_limits<std::streamsize>::max)(), '\n');
 		return Client;
 	}
 
@@ -319,7 +319,7 @@ namespace MyBankDataLib
 		cout << "Update Account Balance : ";
 		cin >> Client.AccountBalance;
 
-		cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		cin.ignore((std::numeric_limits<std::streamsize>::max)(), '\n');
 
 		return Client;
 	}
@@ -913,7 +913,7 @@ namespace MyBankDataLib
 		cout << "Update Permissions : ";
 		User.Permissions = ReadPermissions();
 
-		cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		cin.ignore((std::numeric_limits<std::streamsize>::max)(), '\n');
 
 		return User;
 	}
@@ -944,7 +944,7 @@ namespace MyBankDataLib
 
 			cout << "\nAre you sure you want to Update this User ? [Y/N] >> ";
 			cin >> Answer;
-			cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+			cin.ignore((std::numeric_limits<std::streamsize>::max)(), '\n');
 			if (toupper(Answer) == 'Y')
 			{
 
@@ -1004,7 +1004,7 @@ namespace MyBankDataLib
 		cout << "Enter Permissions: ";
 		User.Permissions = ReadPermissions();
 
-		cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		cin.ignore((std::numeric_limits<std::streamsize>::max)(), '\n');
 		return User;
 	}
 
