@@ -18,7 +18,7 @@ The application is structured into a modular design split between a state-driven
 
 ## 🛠️ Project Structure & Custom Libraries Overview
 
-* **Main Execution Engine**: `ConsoleApplication3.cpp` implements the centralized control loop (`ShowMainMenuScreen` and `ShowTransactionsMenuScreen`), processing options using custom input ranges.
+* **Main Execution Engine**: `Course07BankManagementSystem.cpp` implements the centralized control loop (`ShowMainMenuScreen` and `ShowTransactionsMenuScreen`), processing options using custom input ranges.
 * **Customized Library Stack**:
   * `MyBankDataLib.h`: Custom record parsing, standard layout alignment, and direct disk file synchronization.
   * `MyInputLib.h`: Custom numeric range validation (`ReadNumberInRange`) guarding input interfaces against invalid data entry or software crashes.
@@ -35,7 +35,7 @@ To build and run the executable using the Windows PowerShell environment with GC
 
 ```bash
 # Compile the executable with C++17 standard enabled targeting the current directory include paths
-g++ -std=c++17 ConsoleApplication3.cpp -I . -o Course07Bank.exe
+g++ -std=c++17 Course07BankManagementSystem.cpp -I . -o Course07Bank.exe
 
 # Run the compiled binary on Windows
 .\Course07Bank.exe
