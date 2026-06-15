@@ -6,7 +6,7 @@
 #include <iomanip>
 #include "MyStringLib.h"
 #include "MyInputLib.h"
-
+#include <limits>
 
 using namespace std;
 using namespace MyStringLib;
