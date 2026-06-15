@@ -1,8 +1,11 @@
 # Course07 Bank Project & C++ Utility Toolbox
+🏦 Bank Management System (Course 07)
+
+This repository contains the core capstone banking system implemented as part of **Course 07 (C++ Level 2)** within the professional software development roadmap provided by **ProgrammingAdvices**. 
 
 ## 💎 Core Features & Architecture
 
-The application is structured into a modular design split between a state-driven Console UI engine and customized logical backends:
+The application is structured into a modular layout split between a state-driven Console UI engine, a dedicated Transactions Menu subsystem, and heavily customized backend logic libraries.
 
 1. **Main Management Menu**: Full CRUD subsystem allowing real-time actions:
    * View full structured clients records table.
