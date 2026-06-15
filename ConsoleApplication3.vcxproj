@@ -125,7 +125,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ConsoleApplication3.cpp" />
+    <ClCompile Include="Course07BankManagementSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyArrayLib.h" />
