@@ -1,19 +1,28 @@
 # Course07 Bank Project & C++ Utility Toolbox
 
-A comprehensive, production-grade C++ banking management system and utility toolkit built as part of advanced foundational software architecture training. This repository features custom, header-only libraries optimizing algorithmic math operations, vector manipulations, safe text handling, data persistence, and secure console-based input/output operations.
+## 💎 Core Features & Architecture
 
----
+The application is structured into a modular design split between a state-driven Console UI engine and customized logical backends:
+
+1. **Main Management Menu**: Full CRUD subsystem allowing real-time actions:
+   * View full structured clients records table.
+   * Securely add new account holders.
+   * Account eviction/deletion by unique Account Number.
+   * Dynamic account updates.
+   * Search and view detailed client profile cards.
+2. **Dedicated Transactions Menu Subsystem**:
+   * **Safe Deposits**: Real-time balance augmentation with automated ledger persistence.
+   * **Fail-Safe Withdrawals**: Business logic validation preventing overdrafts by comparing requested amounts against the existing `AccountBalance`.
+   * **Total Balances Accounting**: Algorithmic lookup tracking and summing total net liquidity held inside the bank registry.
+3. **Robust Backend Driver**: Driven by strongly-typed `Enums` mapping application routing state, utilizing references to optimized `std::vector<stClientData>` to maintain high in-memory performance before syncing commits back to `Clients.txt`.
 
 ## 🛠️ Project Structure & Custom Libraries Overview
 
-Unlike standard header implementations, this repository is powered by a suite of **custom-built and heavily modified libraries** designed to extend core C++ functionalities, resolve procedural bugs, and optimize banking business logic:
-
-* **Core Application**: `ConsoleApplication3.cpp` manages the runtime execution and the primary user experience loop for the Bank Management System.
+* **Main Execution Engine**: `ConsoleApplication3.cpp` implements the centralized control loop (`ShowMainMenuScreen` and `ShowTransactionsMenuScreen`), processing options using custom input ranges.
 * **Customized Library Stack**:
-  * `MyBankDataLib.h`: Custom data-streaming and record-parsing engine managing account serialization with `Clients.txt`.
-  * `MyInputLib.h` / `myCpp5AllFuncLib.h`: Deeply refactored, fail-safe validation libraries ensuring robust stream-clearing and type-safe user inputs.
-  * `MyStringLib.h`: Enhanced string-manipulation workspace featuring custom-engineered `Trim` algorithms (handling edge cases for empty/space-only buffers).
-  * `MyMathLib.h`, `MyArrayLib.h`, `MyVectorLib.h`, `MyUtilityLib.h`: Optimized logical modules tailored to accelerate mathematical computations and memory-safe container wrappers.
+  * `MyBankDataLib.h`: Custom record parsing, standard layout alignment, and direct disk file synchronization.
+  * `MyInputLib.h`: Custom numeric range validation (`ReadNumberInRange`) guarding input interfaces against invalid data entry or software crashes.
+  * `MyStringLib.h`: Optimized string operations utilizing safe right/left parsing boundaries.
 ---
 
 ## 🚀 Getting Started & Compilation
