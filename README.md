@@ -12,7 +12,7 @@ To inspect the development milestones, you can navigate across the following Git
     
 - **`Bank-Extension-v1` (Current Branch)**: Implements advanced features from Course 08, adding employee management, user access control gates, and audit trails within the same core execution structure.
 
-- **`Architecture:`** Built using Procedural Programming, focusing on functional decomposition with a strict separation between data and functions, and a direct process flow.
+- **`Architecture:`** Built using **Procedural Programming**, focusing on functional decomposition with a strict separation between data and functions, and a direct process flow.
 
 ## 💎 Key Subsystems & Upgrades
 
